@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-const { Sale, SaleProduct, Product } = require("../models");
-=======
 const PDFDocument = require("pdfkit");
 const { Sale, SaleProduct, Product } = require("../models");
 const fs = require("fs");
@@ -71,7 +68,6 @@ exports.generateSalePDF = async (req, res) => {
     res.status(500).json({ message: "Error generating PDF" });
   }
 };
->>>>>>> master
 
 // Create new sale
 exports.createSale = async (req, res) => {
@@ -143,8 +139,6 @@ exports.getSale = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-<<<<<<< HEAD
-=======
 
 exports.deleteSale = async (req, res) => {
   try {
@@ -168,4 +162,3 @@ exports.deleteSale = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
->>>>>>> master

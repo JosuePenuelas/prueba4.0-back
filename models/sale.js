@@ -10,10 +10,7 @@ module.exports = (sequelize, DataTypes) => {
         foreignKey: "saleId",
         otherKey: "productId"
       });
-<<<<<<< HEAD
-=======
       Sale.hasMany(models.SaleProduct, { foreignKey: "saleId" });
->>>>>>> master
     }
   }
   Sale.init({
