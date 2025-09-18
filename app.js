@@ -21,7 +21,9 @@ app.use(express.json());
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
 const saleRoutes = require("./routes/saleRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
+app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/sales", saleRoutes);
